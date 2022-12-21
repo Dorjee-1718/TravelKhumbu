@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="./images/terrain.png">
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+
+    <title>Travel Khumbu</title>
+    
+</head>
+<body>
+   
+    <div class="hero-container">
+        <img src="./images/hero.png">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="./images/logo.png"/>
+                <div class="logo-title">KUF</div>
+            </div>
+
+            <div class="nav-bar">
+                <div>Home</div>
+                <div>About us</div>
+                <div>Services</div>
+                <div>Popular trips</div>
+                <div>Gallery</div>
+                <div>Contact us</div>
+            </div>
+        </div>
+        
+        <div class="heading-container">
+            <div class="heading-text">
+                Start your adventure
+            </div>
+            <div class="heading-main">
+                in Khumbu
+            </div>
+        </div>
+
+
+        <div class="search-wrapper">
+            <div class="search-container">
+                <form class="dropdown-container">
+                    <select name="place" id="place">
+                        <option value="default">Place to go</option>
+                        <option value="Namche Bazar">Namche Bazar</option>
+                        <option value="Tengboche">Tengboche</option>
+                        <option value="Gokyo Lake">Gokyo Lake</option>
+                        <option value="Everest Base Camp">Everest Base Camp</option>
+                    </select>
+                    <select name="travel-style" id="travel-style">
+                        <option value="default">Travel style</option>
+                        <option value="Camping">Campling</option>
+                        <option value="Lodging">Lodging</option>
+                        <option value="Helicopter">Helicopter</option>
+                        <option value="Horse Riding">Horse Riding</option>
+                    </select>
+                    <select name="period" id="period">
+                        <option value="default">Period</option>
+                        <option value="Spring">Spring</option>
+                        <option value="Autumn">Autumn</option>
+                        <option value="Summer">Summer</option>
+                        <option value="Winter">Winter</option>
+                    </select>
+                    <!-- <input type="submit" value="Find trip ">  -->
+                    <button type="submit" class="search-btn">Find trip <img src="./icons/search.png"/></button>
+                </form>
+                
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="about-container">
+        <div class="about-us-wrapper">
+            <div class="about-us">
+                <div class="heading">About us</div>
+                <div class="subheading">
+                    We organize interesting treks in the Khumbu region.
+                </div>
+                <div class="text">
+                    Our team has been working throughout the Khumbu region for 20 years. We have counted hundreds
+                    of travels and thousands of satisfied customers. This is not all inclusive, but a real unforgettable 
+                    adventure that you will remember for a lifetime.
+                </div>
+                <div class="read-more-container">
+                    <div class="read-more-text">
+                        Read more
+                    </div> 
+                    <img src="./icons/right-arrow.png"/>
+                </div>
+                
+            </div>
+        </div>
+        <div class="about-image-wrapper"> 
+           
+            <img class="about-big-image" src="./images/about.jpg">
+            <img class="about-small-image" src="./images/everest.jpg">  
+           
+        </div>
+
+    </div>
+
+    <div class="services-container">
+        <div class="services-wrapper">
+            <div class="heading">
+                Our services
+            </div>
+            <div class="service-items-wrapper">
+                <div class="service-item">
+                    <img src="./icons/trekking.png"/>
+                    <div class="subheading service-name">
+                        Trekking
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    
+                    <img src="./icons/horse.png"/>
+                    <div class="subheading service-name">
+                        Horse
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <img src="./icons/helicopter.png"/>
+                    
+
+                    <div class="subheading service-name">
+                        Helicopter
+                    </div>
+
+                </div>
+                <div class="service-item">
+                    <img src="./icons/lodging.png"/>
+                    <div class="subheading service-name">
+                        Lodging
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="touch-container">
+        <div class="touch-wrapper">
+            <div class="touch-text">
+
+                <div class="heading">
+                    Stay in touch
+                </div>
+
+                <div class="text">
+                    Subscribe to our newsletter and receive notfications of favourite offers and news.
+                    No spam, just useful information.
+
+                </div>
+            </div>
+
+            <div class="touch-form-container">
+                <form class="email-form">
+                    <input type="text" id="email" name="email" placeholder="Enter e-mail">
+                    <button type="submit" class="contact-btn">Subscribe</button>
+                </form>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="trip-wrapper">
+        <div class="heading">
+            Popular trips
+        </div>
+
+        <div class="trip-nav-bar">
+            <div class="trip-nav-item">Trekking</div>
+            <div class="trip-nav-item">Mountain flight</div>
+            <div class="trip-nav-item">Climbing</div>
+            <div class="trip-nav-item last-trip">Khumbu lifestyle</div>
+        </div>
+
+        <div class="trip-container owl-carousel">
+            <div class="trip-item-wrapper item-1">
+                <img src="./images/namche.jpg">
+                <div class="trip-cost">
+                    <div class="trip-days">
+                        7 days
+                    </div>
+                    <div class="trip-price">
+                        $320
+                    </div>
+                </div>
+                <div class="trip-text-container">
+                    <div class="subheading" id="trip-subheading">
+                        Namche Bazaar
+                    </div>
+                    <div class="text">
+                        Namche is the main trading center and hub for the Khumbu region.
+                        It is locates at an altitude of 3,440 meters.
+                    </div>
+                    <div class="read-more-container">
+                        <div class="read-more-text">
+                            Read more
+                        </div> 
+                        <img src="./icons/right-arrow.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trip-item-wrapper item-2">
+                <img src="./images/tengboche.jpeg">
+                <div class="trip-cost">
+                    <div class="trip-days">
+                        10 days
+                    </div>
+                    <div class="trip-price">
+                        $450
+                    </div>
+                </div>
+                <div class="trip-text-container">
+                    <div class="subheading" id="trip-subheading">
+                        Tengboche
+                    </div>
+                    <div class="text">
+                        Namche is the main trading center and hub for the Khumbu region.
+                        It is locates at an altitude of 3,440 meters.
+                    </div>
+                    <div class="read-more-container">
+                        <div class="read-more-text">
+                            Read more
+                        </div> 
+                        <img src="./icons/right-arrow.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trip-item-wrapper item-3">
+                <img src="./images/everest.jpg">
+                <div class="trip-cost">
+                    <div class="trip-days">
+                        15 days
+                    </div>
+                    <div class="trip-price">
+                        $600
+                    </div>
+                </div>
+                <div class="trip-text-container">
+                    
+                    <div class="subheading" id="trip-subheading">
+                        Everest Base Camp
+                    </div>
+        
+                    <div class="text">
+                        Namche is the main trading center and hub for the Khumbu region.
+                        It is locates at an altitude of 3,440 meters.
+                    </div>
+                    <div class="read-more-container">
+                        <div class="read-more-text">
+                            Read more
+                        </div> 
+                        <img src="./icons/right-arrow.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trip-item-wrapper item-4">
+                <img src="./images/everest.jpg">
+                <div class="trip-cost">
+                    <div class="trip-days">
+                        15 days
+                    </div>
+                    <div class="trip-price">
+                        $600
+                    </div>
+                </div>
+                <div class="trip-text-container">
+                    <div class="subheading" id="trip-subheading">
+                        Everest Base Camp 2
+                    </div>
+                    <div class="text">
+                        Namche is the main trading center and hub for the Khumbu region.
+                        It is locates at an altitude of 3,440 meters.
+                    </div>
+                    <div class="read-more-container">
+                        <div class="read-more-text">
+                            Read more
+                        </div> 
+                        <img src="./icons/right-arrow.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trip-item-wrapper item-5">
+                <img src="./images/everest.jpg">
+                <div class="trip-cost">
+                    <div class="trip-days">
+                        15 days
+                    </div>
+                    <div class="trip-price">
+                        $600
+                    </div>
+                </div>
+                <div class="trip-text-container">
+                    <div class="subheading" id="trip-subheading">
+                        Everest Base Camp 3
+                    </div>
+                    <div class="text">
+                        Namche is the main trading center and hub for the Khumbu region.
+                        It is locates at an altitude of 3,440 meters.
+                    </div>
+                    <div class="read-more-container">
+                        <div class="read-more-text">
+                            Read more
+                        </div> 
+                        <img src="./icons/right-arrow.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trip-item-wrapper item-5">
+                <img src="./images/everest.jpg">
+                <div class="trip-cost">
+                    <div class="trip-days">
+                        15 days
+                    </div>
+                    <div class="trip-price">
+                        $600
+                    </div>
+                </div>
+                <div class="trip-text-container">
+                    <div class="subheading" id="trip-subheading">
+                        Everest Base Camp 4
+                    </div>
+                    <div class="text">
+                        Namche is the main trading center and hub for the Khumbu region.
+                        It is locates at an altitude of 3,440 meters.
+                    </div>
+                    <div class="read-more-container">
+                        <div class="read-more-text">
+                            Read more
+                        </div> 
+                        <img src="./icons/right-arrow.png"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+    
+    <div class="gallery-wrapper">
+        <div class="heading" id="gallery-heading">
+            Photo gallery
+        </div>
+        <div class="subheading" id="gallery-subheading">
+            Trekking
+        </div>
+
+        <div class="slideshow-wrapper">
+            <div class="slideshow-container">
+                <div class="slideshow-item">
+                    <img src="./images/hero.png">
+                    <div class="image-text">Gokyo Lake</div>
+                </div>
+    
+                <div class="slideshow-item">
+                    <img src="./images/namche.jpg">
+                    <div class="image-text">Namche Bazaar</div>
+                </div>
+    
+                <div class="slideshow-item">
+                    <img src="./images/tengboche.jpeg">
+                    <div class="image-text">Tengboche Monastery</div>
+                </div>
+    
+                <div class="slideshow-item">
+                    <img src="./images/everest.jpg">
+                    <div class="image-text">Everest Base Camp</div>
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>    
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+
+    </div>
+
+    <div class="contact-page">
+        <div class="contact-top-wrapper">
+            <div class="contact-container">
+                <div class="contact-wrapper">
+                    <div class="heading">
+                        Contact Us
+                    </div>
+                    <div class="text">
+                        Feel free to contact us. Request a call by entering your phone in 
+                        the column below. We'll necessarily call you back within 5 minutes.
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form">
+                            <input type="text" id="phone" name="phone" placeholder="Enter your phone">
+                            <button type="submit" class="contact-btn">Request</button>
+                        </form>
+                    </div>
+                    <div class="contact-details-container">
+                        <div class="contact-detail-item">
+                            <img src="./icons/location.png">
+                            <div class="contact-detail-text">
+                                Thamel, Kathmandu
+                            </div>
+                        </div>
+    
+                        <div class="contact-detail-item">
+                            <img src="./icons/arroba.png">
+                            <div class="contact-detail-text">
+                                Support@khumbutravels.com
+                            </div>
+                        </div>
+    
+                        <div class="contact-detail-item">
+                            <img src="./icons/phone.png">
+                            <div class="contact-detail-text">
+                                +977 9813452365
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+                
+            </div>
+    
+            <div class="contact-image-container">
+                <img src="./images/contact.jpg">
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="footer-wrapper">
+        <div class="footer">
+            <div class="top-footer">
+                <div class="logo-footer">
+                    <img src="./images/logo.png">
+                    <div class="footer-subheading">
+                        KHUMBU TRAVELS
+                    </div>
+                </div>
+
+                <div class="nav-footer">
+                    <div>Home</div>
+                    <div>About us</div>
+                    <div>Popular trips</div>
+                    <div>Gallery</div>
+                    <div>Contact</div>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <div class="copyright-footer">
+                    &#169; 2022 Khumbu Travels
+                </div>
+
+                <div class="policy-footer">
+                    <div>Terms of Service</div>
+                    <div>Privacy policy</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="./index.js"></script>  
+    <script>
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            margin:30,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+
+
+        });  
+    </script>
+</body>
+</html>
